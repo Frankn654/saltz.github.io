@@ -19,18 +19,20 @@
 
     .logo {
       position: absolute;
-      top: 20%;
-      transform: translateY(-50%);
-      padding: 20px 40px;
-      background: rgba(255, 255, 255, 0.6); /* heller, transparenter Hintergrund */
-      border-radius: 12px; /* leicht abgerundet */
-      backdrop-filter: blur(5px); /* optional: schöner Glass-Effekt */
+      top: 0; /* ganz oben */
+      left: 0;
+      width: 100%; /* volle Breite */
+      padding: 20px 0;
+      background: rgba(255, 255, 255, 0.3); /* transparenter */
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: center;
     }
-
+    
     .logo img {
       width: 800px;
       max-width: 90%;
-      filter: none; /* wieder normales (schwarzes) Logo */
+      filter: none;
     }
 
     .event {
