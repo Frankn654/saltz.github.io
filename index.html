@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SALTZ</title>
   <style>
     body {
@@ -9,22 +10,33 @@
       font-family: Arial, sans-serif;
       color: white;
       text-align: center;
-      background: url('background.jpg') no-repeat center center/cover;
-      height: 100vh;
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px 20px 20px;
+      box-sizing: border-box;
+    }
+
+    .main-content {
+      flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 50px;
+      width: 100%;
     }
 
-    .logo {
-      position: absolute;
-      top: 20%;
-      transform: translateY(-50%);
-    }
-    
     .logo img {
-      width: 800px;
+      width: 700px;
       max-width: 90%;
       filter: drop-shadow(0 0 2px white)
               drop-shadow(0 0 4px white)
@@ -32,10 +44,8 @@
     }
 
     .event {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
       font-size: 1.8em;
+      line-height: 1.5;
     }
 
     .event a {
@@ -43,17 +53,28 @@
       text-decoration: underline;
     }
 
+    .bottom-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 10px;
+    }
+
     .links {
-      position: absolute;
-      bottom: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 20px;
     }
 
     .links a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
-      font-size: 1.5em;
+      font-size: 1.3em;
       border-bottom: 2px solid white;
+      padding-bottom: 2px;
     }
 
     .links a:hover {
@@ -61,49 +82,73 @@
     }
 
     .legal {
-      position: absolute;
-      bottom: 1%;
-      font-size: 0.9em;
+      display: flex;
+      gap: 14px;
+      font-size: 0.75em;
+      opacity: 0.6;
     }
 
     .legal a {
-      color: white;
+      color: #d0d0d0;
       text-decoration: none;
-      margin: 0 10px;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid #d0d0d0;
     }
 
     .legal a:hover {
-      opacity: 0.7;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        gap: 35px;
+      }
+
+      .event {
+        font-size: 1.3em;
+      }
+
+      .links a {
+        font-size: 1.05em;
+      }
+
+      .legal {
+        font-size: 0.7em;
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="logo">
-    <img src="saltz.gif" alt="SALTZ Logo">
-  </div>
+  <div class="page">
+    <div class="main-content">
+      <div class="logo">
+        <img src="saltz.gif" alt="SALTZ Logo">
+      </div>
 
-  <div class="event">
-    <div>
-      Rohrer Seefest<br>
-      Freitag 12. Juni 2026 - 18:30<br>
-      <a href="https://www.rohrer-seefest.de/" target="_blank">
-        www.rohrer-seefest.de
-      </a>
+      <div class="event">
+        <div>
+          Rohrer Seefest<br>
+          Freitag 12. Juni 2026 - 18:30<br>
+          <a href="https://www.rohrer-seefest.de/" target="_blank">
+            www.rohrer-seefest.de
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="links">
-    <a href="https://open.spotify.com/intl-de/artist/0eVIT1rUASLXVpxWbCzB95">Spotify</a>
-    <a href="https://music.apple.com/us/artist/saltz/1070209413">Apple Music</a>
-    <a href="https://music.youtube.com/channel/UCRq2ulpQPC80mSG7lnyeNlA">YouTube</a>
-    <a href="https://www.amazon.com/music/player/artists/B01A6GRF0A/saltz">Amazon Music</a>
-  </div>
+    <div class="bottom-area">
+      <div class="links">
+        <a href="https://open.spotify.com/intl-de/artist/0eVIT1rUASLXVpxWbCzB95">Spotify</a>
+        <a href="https://music.apple.com/us/artist/saltz/1070209413">Apple Music</a>
+        <a href="https://music.youtube.com/channel/UCRq2ulpQPC80mSG7lnyeNlA">YouTube</a>
+        <a href="https://www.amazon.com/music/player/artists/B01A6GRF0A/saltz">Amazon Music</a>
+      </div>
 
-  <div class="legal">
-    <a href="impressum.html">Impressum</a>
-    <a href="datenschutz.html">Datenschutz</a>
+      <div class="legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
   </div>
 
 </body>
