@@ -13,12 +13,36 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
     }
 
-    h1 {
-      font-size: 4em;
-      margin-bottom: 20px;
+    .logo {
+      position: absolute;
+      top: 20%; /* etwas höher */
+      transform: translateY(-50%);
+    }
+
+    .logo img {
+      width: 400px;
+      max-width: 80%;
+    }
+
+    .event {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.8em;
+    }
+
+    .event a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .links {
+      position: absolute;
+      bottom: 5%; /* wirklich im unteren Drittel */
     }
 
     .links a {
@@ -36,13 +60,25 @@
 </head>
 <body>
 
-  <h1>SALTZ</h1>
+  <div class="logo">
+    <img src="saltz.png" alt="SALTZ Logo">
+  </div>
+
+  <div class="event">
+    <div>
+      Rohrer Seefest<br>
+      Freitag 12. Juni 2026 - 18:30<br>
+      <a href="https://www.rohrer-seefest.de/" target="_blank">
+        www.rohrer-seefest.de
+      </a>
+    </div>
+  </div>
 
   <div class="links">
     <a href="https://open.spotify.com/intl-de/artist/0eVIT1rUASLXVpxWbCzB95">Spotify</a>
     <a href="https://music.apple.com/us/artist/saltz/1070209413">Apple Music</a>
-    <a href="https://music.youtube.com/search?q=saltz">YouTube</a>
-    <a href="hhttps://www.amazon.com/music/player/artists/B01A6GRF0A/saltz">Amazon Music</a>
+    <a href="https://music.youtube.com/channel/UCRq2ulpQPC80mSG7lnyeNlA">YouTube</a>
+    <a href="https://www.amazon.com/music/player/artists/B01A6GRF0A/saltz">Amazon Music</a>
   </div>
 
 </body>
