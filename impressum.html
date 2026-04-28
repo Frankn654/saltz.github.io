@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impressum – SALTZ</title>
   <style>
     body {
@@ -13,24 +14,91 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.78));
+      z-index: 0;
     }
 
     .container {
-      background: rgba(0, 0, 0, 0.6);
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       padding: 40px;
-      max-width: 600px;
-      border-radius: 10px;
+      max-width: 700px;
+      width: 100%;
+      border-radius: 20px;
       text-align: left;
+      line-height: 1.7;
+      box-shadow:
+        0 0 30px rgba(0,0,0,0.25),
+        0 0 60px rgba(255,255,255,0.04);
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 20px;
+      margin-top: 0;
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      color: rgba(255,255,255,0.92);
+    }
+
+    p {
+      margin: 0 0 14px 0;
+      color: rgba(255,255,255,0.9);
     }
 
     a {
       color: white;
       text-decoration: underline;
+    }
+
+    .back {
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    .back a {
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.5);
+      padding-bottom: 2px;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .back a:hover {
+      color: white;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 28px 22px;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
     }
   </style>
 </head>
@@ -39,38 +107,31 @@
   <div class="container">
     <h1>Impressum</h1>
 
+    <p>Angaben gemäß § 5 TMG</p>
+
+    <h2>Ansprechpartner</h2>
     <p>
-      Angaben gemäß § 5 TMG
+      Webmaster von www.SALTZ.de<br>
+      Ralf Athen<br>
+      Wolfmahdenstrasse 51<br>
+      D-70563 Stuttgart
     </p>
 
     <p>
-      SALTZ Entertainment<br>
-      vertreten durch:<br>
-      Max Saltzmann
+      E-Mail:
+      <a href="mailto:master@saltz.de">master@saltz.de</a>
     </p>
 
+    <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
     <p>
-      Fantasiestraße 42<br>
-      12345 Neustadt<br>
-      Deutschland
+      Ralf Athen<br>
+      Wolfmahdenstrasse 51<br>
+      D-70563 Stuttgart
     </p>
 
-    <p>
-      Kontakt:<br>
-      Telefon: +49 123 4567890<br>
-      E-Mail: kontakt@saltz-music.de
-    </p>
-
-    <p>
-      Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
-      Max Saltzmann<br>
-      Fantasiestraße 42<br>
-      12345 Neustadt
-    </p>
-
-    <p>
+    <div class="back">
       <a href="index.html">Zurück zur Startseite</a>
-    </p>
+    </div>
   </div>
 
 </body>
