@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutz – SALTZ</title>
+  <title>Impressum – SALTZ</title>
   <style>
     body {
       margin: 0;
@@ -11,6 +11,9 @@
       color: white;
       background: url('background.jpg') no-repeat center center/cover;
       min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 40px 20px;
       box-sizing: border-box;
       position: relative;
@@ -18,22 +21,26 @@
 
     body::before {
       content: "";
-      position: fixed;
+      position: absolute;
       inset: 0;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.82));
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.78)
+      );
       z-index: 0;
     }
 
     .container {
       position: relative;
       z-index: 1;
-      background: rgba(255,255,255,0.06);
+      background: rgba(255, 255, 255, 0.06);
       border: 1px solid rgba(255,255,255,0.14);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       padding: 40px;
-      max-width: 880px;
-      margin: 0 auto;
+      max-width: 720px;
+      width: 100%;
       border-radius: 20px;
       text-align: left;
       line-height: 1.7;
@@ -52,37 +59,34 @@
     }
 
     h2 {
-      font-size: 1.15rem;
-      margin-top: 32px;
+      font-size: 1.1rem;
+      margin-top: 28px;
       margin-bottom: 12px;
-      color: rgba(255,255,255,0.95);
+      color: rgba(255,255,255,0.94);
     }
 
-    p, li {
+    p {
+      margin: 0 0 14px 0;
       color: rgba(255,255,255,0.9);
-      font-size: 0.98rem;
-    }
-
-    ul {
-      padding-left: 22px;
     }
 
     a {
       color: white;
       text-decoration: underline;
-      word-break: break-word;
     }
 
-    .contact-box {
-      margin-top: 28px;
-      padding: 22px;
-      border-radius: 16px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.12);
+    .address-box {
+      margin-top: 12px;
+      padding: 20px;
+      border-radius: 14px;
+      background: white;
+      border: 1px solid rgba(255,255,255,0.18);
       text-align: center;
+      box-shadow:
+        0 0 20px rgba(255,255,255,0.08);
     }
 
-    .contact-box img {
+    .address-box img {
       max-width: 100%;
       height: auto;
       display: inline-block;
@@ -116,8 +120,12 @@
         font-size: 1.7rem;
       }
 
-      p, li {
-        font-size: 0.94rem;
+      h2 {
+        font-size: 1rem;
+      }
+
+      .address-box {
+        padding: 16px;
       }
     }
   </style>
@@ -125,119 +133,23 @@
 <body>
 
   <div class="container">
-    <h1>Datenschutzerklärung</h1>
+    <h1>Impressum</h1>
 
-    <h2>Grundlegendes</h2>
-    <p>
-      Diese Datenschutzerklärung soll die Nutzer dieser Website über die Art, den Umfang und den Zweck
-      der Erhebung und Verwendung personenbezogener Daten durch den Websitebetreiber informieren.
-    </p>
-    <p>
-      Der Websitebetreiber nimmt Ihren Datenschutz sehr ernst und behandelt Ihre personenbezogenen Daten
-      vertraulich und entsprechend der gesetzlichen Vorschriften.
-      Da durch neue Technologien und die ständige Weiterentwicklung dieser Webseite Änderungen an dieser
-      Datenschutzerklärung vorgenommen werden können, empfehlen wir Ihnen, sich die Datenschutzerklärung
-      in regelmäßigen Abständen wieder durchzulesen.
-    </p>
-    <p>
-      Definitionen der verwendeten Begriffe (z.B. „personenbezogene Daten“ oder „Verarbeitung“)
-      finden Sie in Art. 4 DSGVO.
-    </p>
+    <p>Angaben gemäß § 5 TMG</p>
 
-    <h2>Zugriffsdaten</h2>
-    <p>
-      Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechtigten Interesses
-      (s. Art. 6 Abs. 1 lit. f. DSGVO) Daten über Zugriffe auf die Website und speichern diese
-      als „Server-Logfiles“ auf dem Server der Website ab.
-      Folgende Daten werden so protokolliert:
-    </p>
+    <h2>Ansprechpartner</h2>
+    <div class="address-box">
+      <img src="images/adresse.gif" alt="Ansprechpartner SALTZ">
+    </div>
 
-    <ul>
-      <li>Besuchte Website</li>
-      <li>Uhrzeit zum Zeitpunkt des Zugriffes</li>
-      <li>Menge der gesendeten Daten in Byte</li>
-      <li>Quelle/Verweis, von welchem Sie auf die Seite gelangten</li>
-      <li>Verwendeter Browser</li>
-      <li>Verwendetes Betriebssystem</li>
-      <li>Verwendete IP-Adresse</li>
-    </ul>
-
-    <p>
-      Die Server-Logfiles werden für maximal 7 Tage gespeichert und anschließend gelöscht.
-      Die Speicherung der Daten erfolgt aus Sicherheitsgründen, um z. B. Missbrauchsfälle
-      aufklären zu können.
-    </p>
-
-    <h2>Umgang mit Kontaktdaten</h2>
-    <p>
-      Nehmen Sie mit uns als Websitebetreiber durch die angebotenen Kontaktmöglichkeiten Verbindung auf,
-      werden Ihre Angaben gespeichert, damit auf diese zur Bearbeitung und Beantwortung Ihrer Anfrage
-      zurückgegriffen werden kann.
-      Ohne Ihre Einwilligung werden diese Daten nicht an Dritte weitergegeben.
-    </p>
-
-    <h2>Umgang mit Kommentaren und Beiträgen</h2>
-    <p>
-      Hinterlassen Sie auf dieser Website einen Beitrag oder Kommentar, wird Ihre IP-Adresse gespeichert.
-      Dies erfolgt aufgrund unserer berechtigten Interessen im Sinne des Art. 6 Abs. 1 lit. f. DSGVO
-      und dient der Sicherheit des Websitebetreibers.
-    </p>
-
-    <h2>Google Analytics</h2>
-    <p>
-      Diese Website nutzt Google Analytics, einen Webanalysedienst der Google Inc.
-      Google Analytics verwendet Cookies, die auf Ihrem Endgerät gespeichert werden
-      und die Analyse der Benutzung der Website ermöglichen.
-    </p>
-
-    <p>
-      Weitere Informationen:
-    </p>
-
-    <ul>
-      <li>
-        <a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener noreferrer">
-          https://tools.google.com/dlpage/gaoptout?hl=de
-        </a>
-      </li>
-      <li>
-        <a href="https://policies.google.com/privacy/partners?hl=de" target="_blank" rel="noopener noreferrer">
-          https://policies.google.com/privacy/partners?hl=de
-        </a>
-      </li>
-      <li>
-        <a href="https://adssettings.google.de/authenticated" target="_blank" rel="noopener noreferrer">
-          https://adssettings.google.de/authenticated
-        </a>
-      </li>
-    </ul>
-
-    <h2>Rechte des Nutzers</h2>
-    <p>
-      Sie haben als Nutzer das Recht auf kostenlose Auskunft über Ihre gespeicherten personenbezogenen Daten,
-      Berichtigung falscher Daten, Einschränkung oder Löschung sowie Datenübertragbarkeit.
-    </p>
-
-    <h2>Löschung von Daten</h2>
-    <p>
-      Sofern keine gesetzliche Aufbewahrungspflicht besteht, haben Sie das Recht auf Löschung Ihrer Daten.
-    </p>
-
-    <h2>Widerspruchsrecht</h2>
-    <p>
-      Nutzer dieser Webseite können von ihrem Widerspruchsrecht Gebrauch machen
-      und der Verarbeitung ihrer personenbezogenen Daten jederzeit widersprechen.
-    </p>
-
-    <p>
-      Wenn Sie Fragen bezüglich Ihrer personenbezogenen Daten haben oder Einwilligungen widerrufen möchten,
-      wenden Sie sich bitte an:
+    <p style="margin-top: 20px;">
+      E-Mail:
       <a href="mailto:master@saltz.de">master@saltz.de</a>
     </p>
 
-    <div class="contact-box">
-      <h2>Ansprechpartner</h2>
-      <img src="adresse.gif" alt="Ansprechpartner SALTZ">
+    <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+    <div class="address-box">
+      <img src="adresse.gif" alt="Verantwortlicher SALTZ">
     </div>
 
     <div class="back">
