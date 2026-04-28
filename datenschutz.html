@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Datenschutz – SALTZ</title>
   <style>
     body {
@@ -10,40 +11,55 @@
       color: white;
       background: url('background.jpg') no-repeat center center/cover;
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 40px 20px;
       box-sizing: border-box;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.82));
+      z-index: 0;
     }
 
     .container {
-      background: rgba(0, 0, 0, 0.68);
+      position: relative;
+      z-index: 1;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.14);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       padding: 40px;
-      max-width: 760px;
-      width: 100%;
-      border-radius: 10px;
+      max-width: 780px;
+      margin: 0 auto;
+      border-radius: 20px;
       text-align: left;
-      line-height: 1.6;
-    }
-
-    h1, h2 {
-      text-align: center;
+      line-height: 1.7;
+      box-shadow:
+        0 0 30px rgba(0,0,0,0.25),
+        0 0 60px rgba(255,255,255,0.04);
     }
 
     h1 {
+      text-align: center;
       margin-top: 0;
       margin-bottom: 30px;
+      font-size: 2.2rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     h2 {
-      margin-top: 30px;
+      font-size: 1.1rem;
+      margin-top: 28px;
       margin-bottom: 10px;
-      font-size: 1.2em;
+      color: rgba(255,255,255,0.92);
     }
 
-    p {
-      margin: 0 0 14px 0;
+    p, li {
+      color: rgba(255,255,255,0.9);
     }
 
     a {
@@ -53,107 +69,99 @@
 
     .back {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 35px;
+    }
+
+    .back a {
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.5);
+      padding-bottom: 2px;
+      color: rgba(255,255,255,0.75);
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .back a:hover {
+      color: white;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 28px 22px;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <h1>Datenschutzerklärung</h1>
+    <h1>Datenschutz</h1>
 
-    <h2>1. Allgemeine Hinweise</h2>
+    <h2>Ansprechpartner</h2>
     <p>
-      Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen.
-      Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend
-      der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
-    </p>
-
-    <h2>2. Verantwortliche Stelle</h2>
-    <p>
-      SALTZ Entertainment<br>
-      Max Saltzmann<br>
-      Fantasiestraße 42<br>
-      12345 Neustadt<br>
-      Deutschland
+      Webmaster von www.SALTZ.de<br>
+      Ralf Athen<br>
+      Wolfmahdenstrasse 51<br>
+      D-70563 Stuttgart<br>
+      E-Mail: <a href="mailto:master@saltz.de">master@saltz.de</a>
     </p>
 
+    <h2>Datenschutzerklärung</h2>
     <p>
-      E-Mail: kontakt@saltz-music.de<br>
-      Telefon: +49 123 4567890
+      Der Schutz Ihrer persönlichen Daten ist uns wichtig. Personenbezogene Daten
+      werden auf dieser Website nur im technisch notwendigen Umfang verarbeitet.
     </p>
 
-    <h2>3. Erhebung und Speicherung personenbezogener Daten beim Besuch der Website</h2>
+    <h2>Erhebung technischer Daten</h2>
     <p>
-      Beim Aufrufen dieser Website werden durch den Hosting-Anbieter automatisch
-      Informationen erfasst. Dazu können insbesondere gehören:
-    </p>
-    <p>
-      - IP-Adresse<br>
-      - Datum und Uhrzeit des Zugriffs<br>
-      - aufgerufene Seite bzw. Datei<br>
-      - Browsertyp und Browserversion<br>
-      - verwendetes Betriebssystem<br>
-      - Referrer-URL
-    </p>
-    <p>
-      Diese Daten dienen der technischen Bereitstellung, Stabilität und Sicherheit
-      der Website und werden nicht dazu verwendet, Sie unmittelbar persönlich zu identifizieren.
+      Beim Besuch dieser Website können durch den Webserver automatisch technische
+      Zugriffsdaten gespeichert werden. Dazu gehören zum Beispiel IP-Adresse,
+      Datum und Uhrzeit des Zugriffs, aufgerufene Datei, Browsertyp,
+      Betriebssystem und Referrer-URL.
     </p>
 
-    <h2>4. Zwecke und Rechtsgrundlage der Verarbeitung</h2>
     <p>
-      Die Verarbeitung erfolgt zur Bereitstellung der Website sowie zur Gewährleistung
-      eines störungsfreien und sicheren Betriebs.
-    </p>
-    <p>
-      Die Verarbeitung kann auf Grundlage unseres berechtigten Interesses an einer
-      sicheren und funktionsfähigen Website erfolgen.
+      Diese Daten dienen ausschließlich dem sicheren und störungsfreien Betrieb
+      der Website und werden nicht zur persönlichen Identifizierung verwendet.
     </p>
 
-    <h2>5. Externe Links</h2>
+    <h2>Kontakt per E-Mail</h2>
     <p>
-      Diese Website enthält Links zu externen Plattformen und Websites, insbesondere:
-      Spotify, Apple Music, YouTube, Amazon Music sowie die Website des Rohrer Seefests.
-    </p>
-    <p>
-      Beim Anklicken dieser Links verlassen Sie unsere Website. Für die Inhalte
-      und die Datenverarbeitung auf den verlinkten Seiten sind ausschließlich deren
-      jeweilige Betreiber verantwortlich.
+      Wenn Sie per E-Mail Kontakt aufnehmen, werden Ihre Angaben zur Bearbeitung
+      der Anfrage verarbeitet. Diese Daten werden nicht ohne Ihre Einwilligung
+      weitergegeben.
     </p>
 
-    <h2>6. Cookies und ähnliche Technologien</h2>
+    <h2>Externe Links</h2>
     <p>
-      Auf dieser Website werden derzeit nach unserem Kenntnisstand keine eigenen Cookies
-      zu Analyse- oder Marketingzwecken gesetzt.
-    </p>
-    <p>
-      Sollten künftig Cookies, eingebettete Inhalte, Tracking-Tools oder vergleichbare
-      Technologien eingesetzt werden, wird diese Datenschutzerklärung entsprechend ergänzt.
+      Diese Website enthält Links zu externen Angeboten, insbesondere zu
+      Musikplattformen und Veranstaltungsseiten. Beim Anklicken dieser Links
+      verlassen Sie diese Website. Für die Datenverarbeitung auf den externen
+      Seiten sind ausschließlich deren Betreiber verantwortlich.
     </p>
 
-    <h2>7. Ihre Rechte</h2>
+    <h2>Cookies</h2>
     <p>
-      Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen insbesondere das Recht auf:
-    </p>
-    <p>
-      - Auskunft über Ihre gespeicherten Daten<br>
-      - Berichtigung unrichtiger Daten<br>
-      - Löschung Ihrer Daten<br>
-      - Einschränkung der Verarbeitung<br>
-      - Widerspruch gegen die Verarbeitung<br>
-      - Datenübertragbarkeit
+      Diese Website verwendet nach aktuellem Stand keine eigenen Cookies zu
+      Analyse- oder Marketingzwecken.
     </p>
 
-    <h2>8. Beschwerderecht</h2>
+    <h2>Ihre Rechte</h2>
     <p>
-      Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die
-      Verarbeitung Ihrer personenbezogenen Daten zu beschweren.
+      Sie haben im Rahmen der gesetzlichen Bestimmungen das Recht auf Auskunft,
+      Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch gegen
+      die Verarbeitung sowie Datenübertragbarkeit.
     </p>
 
-    <h2>9. Stand</h2>
+    <h2>Beschwerderecht</h2>
     <p>
-      Stand dieser Datenschutzerklärung: April 2026
+      Sie haben das Recht, sich bei einer zuständigen Datenschutz-Aufsichtsbehörde
+      zu beschweren.
     </p>
 
     <div class="back">
